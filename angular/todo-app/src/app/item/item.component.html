@@ -1,0 +1,10 @@
+<div (click)="this.itemsService.changeItemStatus(item)"  [ngClass]="{'todo-item' : true, 'completed' : item.completed }">
+    <div class="todo-item-date">
+        <span class="day">{{item.date.toLocaleString('default', { day: 'numeric' })}}</span>
+        <span class="month">{{item.date.toLocaleString('default', { month: 'short' })}}</span>
+    </div>
+    <div class="todo-item-content">
+        <span class="data">{{item.content}}</span>
+    </div>
+    <span class="delete-btn" title="delete" (click)="this.itemsService.deleteItem(item)"></span>
+</div>

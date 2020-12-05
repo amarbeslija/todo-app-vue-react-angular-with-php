@@ -1,0 +1,20 @@
+<div id="all-items" class="items-container" [style.marginLeft]="-(this.tabsService.activeTab - 1)*100 + '%'">
+    <div id="all-items-container">
+        <span class="no-items-message">No Items</span>
+        <app-items-all></app-items-all>
+    </div>
+</div>
+
+<div id="active-items" class="items-container">
+    <div id="active-items-container">
+        <span class="no-items-message">No Items</span>
+        <app-item-active></app-item-active>
+    </div>
+</div>
+
+<div id="completed-items" class="items-container">
+    <div id="completed-items-container">
+        <span class="no-items-message">No Items</span>
+        <app-items-completed></app-items-completed>
+    </div>
+</div>
